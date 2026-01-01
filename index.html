@@ -603,9 +603,15 @@
             margin-top: 1.5rem;
         }
 
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
         .achievement-item {
             padding: 1rem;
-            margin-bottom: 1rem;
             background: rgba(59, 130, 246, 0.1);
             border-radius: 10px;
             border-left: 3px solid var(--gold);
@@ -620,13 +626,13 @@
         .achievement-title {
             color: var(--white);
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 1rem;
             margin-bottom: 0.3rem;
         }
 
         .achievement-details {
             color: var(--gray);
-            font-size: 0.95rem;
+            font-size: 0.9rem;
         }
 
         /* Contact Section */
@@ -735,6 +741,10 @@
             .carousel-button.next {
                 right: -20px;
             }
+
+            .achievements-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
@@ -763,6 +773,338 @@
                 <a href="#about" class="btn btn-primary">Learn More</a>
                 <a href="#contact" class="btn btn-secondary">Get in Touch</a>
             </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2 class="section-title">Research Experience</h2>
+        <p class="section-subtitle">Contributing to cutting-edge research in AI and data science</p>
+        
+        <div class="experience-grid">
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3 class="experience-title">Research Intern</h3>
+                    <div class="experience-org">SiriusMindShare LLC</div>
+                    <span class="experience-date">May 2025 - Present</span>
+                </div>
+                <div class="experience-description">
+                    Conducting research under Dr. Venkata Duvvuri, PhD, analyzing storefront neuromarketing techniques using large language models (LLMs). Investigating how AI can decode and optimize marketing strategies through advanced natural language processing and behavioral analysis.
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3 class="experience-title">Researcher</h3>
+                    <div class="experience-org">Aspiring Scholars Directed Research Program (ASDRP)</div>
+                    <span class="experience-date">December 2024 - Present</span>
+                </div>
+                <div class="experience-description">
+                    Conducting research under Dr. Viktoriia Liu, PhD, on pulmonary blood vessel segmentation using the U-Net deep learning architecture. Applying advanced computer vision techniques to medical imaging, with potential applications in diagnostic tools and treatment planning.
+                </div>
+            </div>
+
+            <div class="experience-card">
+                <div class="experience-header">
+                    <h3 class="experience-title">Independent Researcher</h3>
+                    <div class="experience-org">Self-Employed</div>
+                    <span class="experience-date">August 2024 - Present</span>
+                </div>
+                <div class="experience-description">
+                    Investigating various applications of computer vision using deep learning. Applying machine learning and data science techniques across multiple projects, including image classification, object detection, and neural network optimization.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <p class="section-subtitle">Building innovative solutions with AI and data science</p>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3 class="project-title">BioStat: A Disease-Agnostic Biomarker Analysis Platform</h3>
+                <p class="project-description">
+                    BioStat is a disease-agnostic, web-based biomarker analysis platform designed to help clinicians, researchers, and healthcare professionals interpret biomarker datasets in an intuitive and visual way. The platform allows users to upload CSV files and generate statistical summaries, visualizations, and patient-level insights.
+                </p>
+                <div class="project-links">
+                    <a href="https://github.com/aarnavg54/BioStat-Disease-Biomarker-Analyzer" target="_blank" class="project-link">
+                        🔗 GitHub Repository
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=g0WEmUvmRmo" target="_blank" class="project-link">
+                        🎥 Video Demo
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3 class="project-title">OvaScan: An AI-Powered Tumor Segmentation App</h3>
+                <p class="project-description">
+                    OvaScan is an AI-powered mobile app designed to support ovarian tumor analysis using ultrasound imaging. Ovarian cancer remains one of the deadliest gynecologic cancers, and early detection plays a critical role in improving outcomes. However, access to trained specialists and advanced imaging tools is limited in many parts of the world.
+                </p>
+                <div class="project-links">
+                    <a href="https://www.youtube.com/watch?v=RixZtDxBoIQ" target="_blank" class="project-link">
+                        🎥 Video Demo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-subtitle">Proficient in modern AI and data science technologies</p>
+        
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3><span class="skill-icon">💻</span> Programming</h3>
+                <div class="skill-list">
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">Java</span>
+                    <span class="skill-badge">Swift</span>
+                    <span class="skill-badge">Jupyter Notebooks</span>
+                    <span class="skill-badge">XCode</span>
+                    <span class="skill-badge">CSS</span>
+                    <span class="skill-badge">HTML</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><span class="skill-icon">🤖</span> Machine Learning & Vision</h3>
+                <div class="skill-list">
+                    <span class="skill-badge">PyTorch</span>
+                    <span class="skill-badge">TensorFlow</span>
+                    <span class="skill-badge">Keras</span>
+                    <span class="skill-badge">Scikit-learn</span>
+                    <span class="skill-badge">OpenCV</span>
+                </div>
+            </div>
+
+            <div class="skill-category">
+                <h3><span class="skill-icon">📊</span> Data & Visualization</h3>
+                <div class="skill-list">
+                    <span class="skill-badge">NumPy</span>
+                    <span class="skill-badge">Pandas</span>
+                    <span class="skill-badge">Matplotlib</span>
+                    <span class="skill-badge">Pillow</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clubs & Competitions Section -->
+    <section id="clubs">
+        <h2 class="section-title">Extracurriculars & Competitions</h2>
+        <p class="section-subtitle">Excellence in academic competitions and extracurricular activities</p>
+        
+        <div class="clubs-grid">
+            <div class="club-card">
+                <div class="club-header">
+                    <div class="club-icon">💻</div>
+                    <div>
+                        <h3 class="club-title">Computer Science Club</h3>
+                        <p style="color: var(--gray);">Vice President of Math & Finance</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="club-card">
+                <div class="club-header">
+                    <div class="club-icon">🏃</div>
+                    <div>
+                        <h3 class="club-title">Cross Country</h3>
+                        <p style="color: var(--gray);">Varsity Athlete | August 2024 - Present</p>
+                    </div>
+                </div>
+                <p style="color: var(--gray); margin-bottom: 1.5rem;">One of 7 varsity athletes selected to compete in conference, regionals, and sectionals meets.</p>
+            </div>
+
+            <div class="club-card">
+                <div class="club-header">
+                    <div class="club-icon">🌍</div>
+                    <div>
+                        <h3 class="club-title">Open Learning Exchange (OLE) Nepal</h3>
+                        <p style="color: var(--gray);">Volunteer | Educational Content Creator</p>
+                    </div>
+                </div>
+                <ul class="achievements-list">
+                    <li class="achievement-item">
+                        <div class="achievement-title">📹 Developed 20+ instructional YouTube videos</div>
+                        <div class="achievement-details">Supporting underprivileged students across Nepal</div>
+                    </li>
+                    <li class="achievement-item">
+                        <div class="achievement-title">📚 Contributed structured math content lessons</div>
+                        <div class="achievement-details">Enhanced online learning resources for remote communities</div>
+                    </li>
+                    <li class="achievement-item">
+                        <div class="achievement-title">🏅 President's Volunteer Service Award</div>
+                        <div class="achievement-details">Gold Level Recognition</div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="club-card">
+                <div class="club-header">
+                    <div class="club-icon">🔬</div>
+                    <div>
+                        <h3 class="club-title">Science Olympiad</h3>
+                        <p style="color: var(--gray);">October 2021 - Present</p>
+                    </div>
+                </div>
+                <p style="color: var(--gray); margin-bottom: 1.5rem;">Selected as one of the top 15 students representing the varsity team in microbiology, aerodynamics, topography, and biology.</p>
+                
+                <div class="achievements-grid">
+                    <div class="achievement-item">
+                        <div class="achievement-title">🥇 1st Place - Microbe Mission</div>
+                        <div class="achievement-details">8th Grade State</div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-title">🥈 2nd Place - Road Scholars</div>
+                        <div class="achievement-details">8th Grade State</div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-title">🥉 3rd Place - Flight</div>
+                        <div class="achievement-details">8th Grade State</div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-title">🏅 5th Place - Forestry</div>
+                        <div class="achievement-details">8th Grade State</div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-title">🏅 5th Place - Bio-Process Lab</div>
+                        <div class="achievement-details">7th Grade State</div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-title">🏅 6th Place - Road Scholars</div>
+                        <div class="achievement-details">7th Grade State</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="club-card">
+                <div class="club-header">
+                    <div class="club-icon">🔢</div>
+                    <div>
+                        <h3 class="club-title">Math Team</h3>
+                        <p style="color: var(--gray);">August 2021 - Present</p>
+                    </div>
+                </div>
+                <p style="color: var(--gray); margin-bottom: 1.5rem;">Selected as one of only 5 freshmen representing the school varsity math team, competing at state and national levels.</p>
+                
+                <div class="achievements-grid">
+                    <div class="achievement-item">
+                        <div class="achievement-title">🏆 ICTM State Champions</div>
+                        <div class="achievement-details">Division 2A - 2024-2025</div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-title">⭐ 6th Place Individual</div>
+                        <div class="achievement-details">Out of 130 at State</div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-title">🥈 2nd Place - 2-Person Team</div>
+                        <div class="achievement-details">ICTM State</div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-title">🥉 3rd Place - 8-Person Team</div>
+                        <div class="achievement-details">ICTM State</div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-title">🎯 3x National Qualifier</div>
+                        <div class="achievement-details">Mathcon National</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Let's connect and collaborate</p>
+        
+        <div class="contact-content">
+            <p style="font-size: 1.2rem; color: var(--gray); margin-bottom: 2rem;">
+                I'm always interested in discussing research opportunities, collaborative projects, or new ideas in AI and data science.
+            </p>
+            
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-label">Email</div>
+                    <a href="mailto:aarnavg54@gmail.com">aarnavg54@gmail.com</a>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">📱</div>
+                    <div class="contact-label">Phone</div>
+                    <a href="tel:3128858556">312-885-8556</a>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">💻</div>
+                    <div class="contact-label">GitHub</div>
+                    <a href="https://github.com/aarnavg54" target="_blank">github.com/aarnavg54</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Aarnav Garg. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Carousel -->
+    <script>
+        let currentSlide = 0;
+        const totalSlides = 5;
+        
+        // Initialize indicators
+        const indicatorsContainer = document.getElementById('indicators');
+        for (let i = 0; i < totalSlides; i++) {
+            const indicator = document.createElement('div');
+            indicator.className = 'indicator';
+            if (i === 0) indicator.classList.add('active');
+            indicator.onclick = () => goToSlide(i);
+            indicatorsContainer.appendChild(indicator);
+        }
+        
+        function updateCarousel() {
+            const track = document.getElementById('carouselTrack');
+            track.style.transform = `translateX(-${currentSlide * 100}%)`;
+            
+            // Update indicators
+            const indicators = document.querySelectorAll('.indicator');
+            indicators.forEach((indicator, index) => {
+                indicator.classList.toggle('active', index === currentSlide);
+            });
+        }
+        
+        function moveSlide(direction) {
+            currentSlide += direction;
+            
+            if (currentSlide < 0) {
+                currentSlide = totalSlides - 1;
+            } else if (currentSlide >= totalSlides) {
+                currentSlide = 0;
+            }
+            
+            updateCarousel();
+        }
+        
+        function goToSlide(index) {
+            currentSlide = index;
+            updateCarousel();
+        }
+        
+        // Auto-advance carousel every 5 seconds
+        setInterval(() => {
+            moveSlide(1);
+        }, 5000);
+    </script>
+</body>
+</html>>
         </div>
     </section>
 
@@ -893,318 +1235,4 @@
                     <span class="skill-badge">IMSA RISE Online Program</span>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2 class="section-title">Research Experience</h2>
-        <p class="section-subtitle">Contributing to cutting-edge research in AI and data science</p>
-        
-        <div class="experience-grid">
-            <div class="experience-card">
-                <div class="experience-header">
-                    <h3 class="experience-title">Research Intern</h3>
-                    <div class="experience-org">SiriusMindShare LLC</div>
-                    <span class="experience-date">May 2025 - Present</span>
-                </div>
-                <div class="experience-description">
-                    Conducting research under Dr. Venkata Duvvuri, PhD, analyzing storefront neuromarketing techniques using large language models (LLMs). Investigating how AI can decode and optimize marketing strategies through advanced natural language processing and behavioral analysis.
-                </div>
-            </div>
-
-            <div class="experience-card">
-                <div class="experience-header">
-                    <h3 class="experience-title">Researcher</h3>
-                    <div class="experience-org">Aspiring Scholars Directed Research Program (ASDRP)</div>
-                    <span class="experience-date">December 2024 - Present</span>
-                </div>
-                <div class="experience-description">
-                    Conducting research under Dr. Viktoriia Liu, PhD, on pulmonary blood vessel segmentation using the U-Net deep learning architecture. Applying advanced computer vision techniques to medical imaging, with potential applications in diagnostic tools and treatment planning.
-                </div>
-            </div>
-
-            <div class="experience-card">
-                <div class="experience-header">
-                    <h3 class="experience-title">Independent Researcher</h3>
-                    <div class="experience-org">Self-Employed</div>
-                    <span class="experience-date">August 2024 - Present</span>
-                </div>
-                <div class="experience-description">
-                    Investigating various applications of computer vision using deep learning. Applying machine learning and data science techniques across multiple projects, including image classification, object detection, and neural network optimization.
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2 class="section-title">Projects</h2>
-        <p class="section-subtitle">Building innovative solutions with AI and data science</p>
-        
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3 class="project-title">BioStat: A Disease-Agnostic Biomarker Analysis Platform</h3>
-                <p class="project-description">
-                    BioStat is a disease-agnostic, web-based biomarker analysis platform designed to help clinicians, researchers, and healthcare professionals interpret biomarker datasets in an intuitive and visual way. The platform allows users to upload CSV files and generate statistical summaries, visualizations, and patient-level insights.
-                </p>
-                <div class="project-links">
-                    <a href="https://github.com/aarnavg54/BioStat-Disease-Biomarker-Analyzer" target="_blank" class="project-link">
-                        🔗 GitHub Repository
-                    </a>
-                    <a href="https://www.youtube.com/watch?v=g0WEmUvmRmo" target="_blank" class="project-link">
-                        🎥 Video Demo
-                    </a>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <h3 class="project-title">OvaScan: An AI-Powered Tumor Segmentation App</h3>
-                <p class="project-description">
-                    OvaScan is an AI-powered mobile app designed to support ovarian tumor analysis using ultrasound imaging. Ovarian cancer remains one of the deadliest gynecologic cancers, and early detection plays a critical role in improving outcomes. However, access to trained specialists and advanced imaging tools is limited in many parts of the world.
-                </p>
-                <div class="project-links">
-                    <a href="https://www.youtube.com/watch?v=RixZtDxBoIQ" target="_blank" class="project-link">
-                        🎥 Video Demo
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-        <h2 class="section-title">Technical Skills</h2>
-        <p class="section-subtitle">Proficient in modern AI and data science technologies</p>
-        
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3><span class="skill-icon">💻</span> Programming</h3>
-                <div class="skill-list">
-                    <span class="skill-badge">Python</span>
-                    <span class="skill-badge">Java</span>
-                    <span class="skill-badge">Swift</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3><span class="skill-icon">🤖</span> Machine Learning & Vision</h3>
-                <div class="skill-list">
-                    <span class="skill-badge">PyTorch</span>
-                    <span class="skill-badge">TensorFlow</span>
-                    <span class="skill-badge">Keras</span>
-                    <span class="skill-badge">Scikit-learn</span>
-                    <span class="skill-badge">OpenCV</span>
-                </div>
-            </div>
-
-            <div class="skill-category">
-                <h3><span class="skill-icon">📊</span> Data & Visualization</h3>
-                <div class="skill-list">
-                    <span class="skill-badge">NumPy</span>
-                    <span class="skill-badge">Pandas</span>
-                    <span class="skill-badge">Matplotlib</span>
-                    <span class="skill-badge">Pillow</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Clubs & Competitions Section -->
-    <section id="clubs">
-        <h2 class="section-title">Extracurriculars & Competitions</h2>
-        <p class="section-subtitle">Excellence in academic competitions and extracurricular activities</p>
-        
-        <div class="clubs-grid">
-            <div class="club-card">
-                <div class="club-header">
-                    <div class="club-icon">🏃</div>
-                    <div>
-                        <h3 class="club-title">Cross Country</h3>
-                        <p style="color: var(--gray);">Varsity Athlete | August 2024 - Present</p>
-                    </div>
-                </div>
-                <p style="color: var(--gray); margin-bottom: 1.5rem;">One of 7 varsity athletes selected to compete in conference, regionals, and sectionals meets.</p>
-            </div>
-
-            <div class="club-card">
-                <div class="club-header">
-                    <div class="club-icon">🌍</div>
-                    <div>
-                        <h3 class="club-title">Open Learning Exchange (OLE) Nepal</h3>
-                        <p style="color: var(--gray);">Volunteer | Educational Content Creator</p>
-                    </div>
-                </div>
-                <ul class="achievements-list">
-                    <li class="achievement-item">
-                        <div class="achievement-title">📹 Developed 20+ instructional YouTube videos</div>
-                        <div class="achievement-details">Supporting underprivileged students across Nepal</div>
-                    </li>
-                    <li class="achievement-item">
-                        <div class="achievement-title">📚 Contributed structured math content lessons</div>
-                        <div class="achievement-details">Enhanced online learning resources for remote communities</div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="club-card">
-                <div class="club-header">
-                    <div class="club-icon">🔬</div>
-                    <div>
-                        <h3 class="club-title">Science Olympiad</h3>
-                        <p style="color: var(--gray);">October 2021 - Present</p>
-                    </div>
-                </div>
-                <p style="color: var(--gray); margin-bottom: 1.5rem;">Selected as one of the top 15 students representing the varsity team in microbiology, aerodynamics, topography, and biology.</p>
-                
-                <ul class="achievements-list">
-                    <li class="achievement-item">
-                        <div class="achievement-title">🥇 1st Place - Microbe Mission</div>
-                        <div class="achievement-details">8th Grade State Competition</div>
-                    </li>
-                    <li class="achievement-item">
-                        <div class="achievement-title">🥈 2nd Place - Road Scholars</div>
-                        <div class="achievement-details">8th Grade State Competition</div>
-                    </li>
-                    <li class="achievement-item">
-                        <div class="achievement-title">🥉 3rd Place - Flight</div>
-                        <div class="achievement-details">8th Grade State Competition</div>
-                    </li>
-                    <li class="achievement-item">
-                        <div class="achievement-title">🏅 5th Place - Forestry</div>
-                        <div class="achievement-details">8th Grade State Competition</div>
-                    </li>
-                    <li class="achievement-item">
-                        <div class="achievement-title">🏅 5th Place - Bio-Process Lab</div>
-                        <div class="achievement-details">7th Grade State Competition</div>
-                    </li>
-                    <li class="achievement-item">
-                        <div class="achievement-title">🏅 6th Place - Road Scholars</div>
-                        <div class="achievement-details">7th Grade State Competition</div>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="club-card">
-                <div class="club-header">
-                    <div class="club-icon">🔢</div>
-                    <div>
-                        <h3 class="club-title">Math Team</h3>
-                        <p style="color: var(--gray);">August 2021 - Present</p>
-                    </div>
-                </div>
-                <p style="color: var(--gray); margin-bottom: 1.5rem;">Selected as one of only 5 freshmen representing the school varsity math team, competing at state and national levels.</p>
-                
-                <ul class="achievements-list">
-                    <li class="achievement-item">
-                        <div class="achievement-title">🏆 ICTM 2024-2025 State Champions</div>
-                        <div class="achievement-details">Division 2A - Team Victory</div>
-                    </li>
-                    <li class="achievement-item">
-                        <div class="achievement-title">⭐ 6th Place Individual</div>
-                        <div class="achievement-details">Out of 130 competitors at ICTM State</div>
-                    </li>
-                    <li class="achievement-item">
-                        <div class="achievement-title">🥈 2nd Place - 2-Person Team</div>
-                        <div class="achievement-details">ICTM State Competition</div>
-                    </li>
-                    <li class="achievement-item">
-                        <div class="achievement-title">🥉 3rd Place - 8-Person Team</div>
-                        <div class="achievement-details">ICTM State Competition</div>
-                    </li>
-                    <li class="achievement-item">
-                        <div class="achievement-title">🎯 3x National Qualifier</div>
-                        <div class="achievement-details">Mathcon National Competition</div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2 class="section-title">Get In Touch</h2>
-        <p class="section-subtitle">Let's connect and collaborate</p>
-        
-        <div class="contact-content">
-            <p style="font-size: 1.2rem; color: var(--gray); margin-bottom: 2rem;">
-                I'm always interested in discussing research opportunities, collaborative projects, or new ideas in AI and data science.
-            </p>
-            
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="contact-icon">📧</div>
-                    <div class="contact-label">Email</div>
-                    <a href="mailto:aarnavg54@gmail.com">aarnavg54@gmail.com</a>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">📱</div>
-                    <div class="contact-label">Phone</div>
-                    <a href="tel:3128858556">312-885-8556</a>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-icon">💻</div>
-                    <div class="contact-label">GitHub</div>
-                    <a href="https://github.com/aarnavg54" target="_blank">github.com/aarnavg54</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Aarnav Garg. All rights reserved.</p>
-    </footer>
-
-    <!-- JavaScript for Carousel -->
-    <script>
-        let currentSlide = 0;
-        const totalSlides = 5;
-        
-        // Initialize indicators
-        const indicatorsContainer = document.getElementById('indicators');
-        for (let i = 0; i < totalSlides; i++) {
-            const indicator = document.createElement('div');
-            indicator.className = 'indicator';
-            if (i === 0) indicator.classList.add('active');
-            indicator.onclick = () => goToSlide(i);
-            indicatorsContainer.appendChild(indicator);
-        }
-        
-        function updateCarousel() {
-            const track = document.getElementById('carouselTrack');
-            track.style.transform = `translateX(-${currentSlide * 100}%)`;
-            
-            // Update indicators
-            const indicators = document.querySelectorAll('.indicator');
-            indicators.forEach((indicator, index) => {
-                indicator.classList.toggle('active', index === currentSlide);
-            });
-        }
-        
-        function moveSlide(direction) {
-            currentSlide += direction;
-            
-            if (currentSlide < 0) {
-                currentSlide = totalSlides - 1;
-            } else if (currentSlide >= totalSlides) {
-                currentSlide = 0;
-            }
-            
-            updateCarousel();
-        }
-        
-        function goToSlide(index) {
-            currentSlide = index;
-            updateCarousel();
-        }
-        
-        // Auto-advance carousel every 5 seconds
-        setInterval(() => {
-            moveSlide(1);
-        }, 5000);
-    </script>
-</body>
-</html>
+        </div
