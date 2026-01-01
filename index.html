@@ -605,7 +605,7 @@
 
         .achievements-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1rem;
             margin-top: 1.5rem;
         }
@@ -773,6 +773,137 @@
                 <a href="#about" class="btn btn-primary">Learn More</a>
                 <a href="#contact" class="btn btn-secondary">Get in Touch</a>
             </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">Interested in applying AI to real-world problems</p>
+        
+        <!-- Photo Carousel -->
+        <div class="photo-carousel">
+            <div class="carousel-container">
+                <div class="carousel-wrapper">
+                    <div class="carousel-track" id="carouselTrack">
+                        <div class="carousel-slide">
+                            <img src="photo1.png" alt="Aarnav Garg - Photo 1">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="photo2.png" alt="Aarnav Garg - Photo 2">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="photo3.png" alt="Aarnav Garg - Photo 3">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="photo4.png" alt="Aarnav Garg - Photo 4">
+                        </div>
+                        <div class="carousel-slide">
+                            <img src="photo5.png" alt="Aarnav Garg - Photo 5">
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-button prev" onclick="moveSlide(-1)">‹</button>
+                <button class="carousel-button next" onclick="moveSlide(1)">›</button>
+                <div class="carousel-indicators" id="indicators"></div>
+            </div>
+        </div>
+
+        <div class="about-content">
+            <p>
+                I'm a sophomore at Vernon Hills High School with strong interests in computer science,
+                computational biology, and artificial intelligence. What started as curiosity about data science grown into sustained involvement in research and hands-on exploration
+                of machine learning.
+            </p>
+
+            <p>
+                I enjoy working at the intersection of theory and application, especially where data,
+                algorithms, and real-world impact meet. Research has been a key part of my growth,
+                allowing me to think critically, ask better questions, and build technically sound solutions.
+            </p>
+
+            <p>
+                Outside of research, I compete in mathematics and science competitions and have earned
+                state-level recognition through Science Olympiad and Math Team. I also pursue advanced
+                coursework beyond my school curriculum through self-driven learning. 
+            </p>
+
+            <p>
+                My long-term goal is to develop AI-driven tools that make a meaningful impact in areas
+                like healthcare and society more broadly. I'm always open to
+                collaborating, learning, and connecting with others who share similar interests.
+            </p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+        <p class="section-subtitle">Academic excellence and continuous learning</p>
+        
+        <div class="education-card">
+            <div class="education-header">
+                <h3>Vernon Hills High School</h3>
+                <span class="education-date">2024 - 2028</span>
+            </div>
+            
+            <div class="education-details">
+                <div class="detail-item">
+                    <div class="detail-label">Unweighted GPA</div>
+                    <div>4.0 / 4.0</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Weighted GPA</div>
+                    <div>4.51 / 4.0</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">Current Grade</div>
+                    <div>10th Grade (Sophomore)</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">PSAT 8/9</div>
+                    <div>1440 / 1440 (Perfect Score)</div>
+                </div>
+                <div class="detail-item">
+                    <div class="detail-label">PreACT 9</div>
+                    <div>32 / 32 (Perfect Score)</div>
+                </div>
+            </div>
+
+            <div style="margin-top: 2rem;">
+                <div class="detail-label" style="margin-bottom: 1rem; font-size: 1.2rem;">Advanced Coursework</div>
+                <div class="skill-list">
+                    <span class="skill-badge">AP Computer Science A</span>
+                    <span class="skill-badge">AP Calculus BC</span>
+                    <span class="skill-badge">AP Physics 1</span>
+                    <span class="skill-badge">AP Physics 2</span>
+                    <span class="skill-badge">Honor Roll</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="education-card">
+            <div class="education-header">
+                <h3>Self-Directed Learning</h3>
+                <span class="education-date">Ongoing</span>
+            </div>
+            
+            <div style="margin-top: 1rem;">
+                <p style="color: var(--gray); margin-bottom: 1.5rem;">Continuously expanding knowledge through online coursework and specialized programs in machine learning and data science.</p>
+                <div class="skill-list">
+                    <a href="https://coursera.org/share/8421b8f9d4fe33fe887ba9dfc8763337" target="_blank" class="skill-badge" style="text-decoration: none;">Python for Data Visualization: Matplotlib & Seaborn</a>
+                    <a href="https://coursera.org/share/9311bf1016ced1d56a5899a6d99241bb" target="_blank" class="skill-badge" style="text-decoration: none;">What is Data Science?</a>
+                    <a href="https://coursera.org/share/ca8cb6e50850611b610e6f9724789fd7" target="_blank" class="skill-badge" style="text-decoration: none;">Introduction to Artificial Intelligence (AI)</a>
+                    <a href="https://coursera.org/share/560f9f2038944ff4c8519efd022a28b1" target="_blank" class="skill-badge" style="text-decoration: none;">Generative AI: Prompt Engineering Basics</a>
+                    <a href="https://coursera.org/share/303d2ae82cfd7337b63e2e9704501439" target="_blank" class="skill-badge" style="text-decoration: none;">Generative AI: Introduction and Applications</a>
+                    <a href="https://coursera.org/share/97d61646fa13a7684d1604da66645b48" target="_blank" class="skill-badge" style="text-decoration: none;">Introduction to Deep Learning & Neural Networks with Keras</a>
+                    <a href="https://coursera.org/share/89cf7c0b23d055ac92e95bac10e97a01" target="_blank" class="skill-badge" style="text-decoration: none;">Machine Learning with Python</a>
+                    <a href="https://coursera.org/share/232a2cc135a5402cd90e5a548c5fba5a" target="_blank" class="skill-badge" style="text-decoration: none;">Introduction to Retrieval Augmented Generation (RAG)</a>
+                    <a href="https://coursera.org/share/d6c385c813a2492022f27f6a747f100e" target="_blank" class="skill-badge" style="text-decoration: none;">Data Analysis with Python</a>
+                    <span class="skill-badge">IMSA RISE Online Program</span>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Experience Section -->
@@ -918,6 +1049,21 @@
                     </div>
                 </div>
                 <p style="color: var(--gray); margin-bottom: 1.5rem;">One of 7 varsity athletes selected to compete in conference, regionals, and sectionals meets.</p>
+                
+                <div class="achievements-grid">
+                    <div class="achievement-item">
+                        <div class="achievement-title">🏅 Conference</div>
+                        <div class="achievement-details">Varsity Competition</div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-title">🏅 Regionals</div>
+                        <div class="achievement-details">Varsity Competition</div>
+                    </div>
+                    <div class="achievement-item">
+                        <div class="achievement-title">🏅 Sectionals</div>
+                        <div class="achievement-details">Varsity Competition</div>
+                    </div>
+                </div>
             </div>
 
             <div class="club-card">
@@ -1104,135 +1250,4 @@
         }, 5000);
     </script>
 </body>
-</html>>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2 class="section-title">About Me</h2>
-        <p class="section-subtitle">Interested in applying AI to real-world problems</p>
-        
-        <!-- Photo Carousel -->
-        <div class="photo-carousel">
-            <div class="carousel-container">
-                <div class="carousel-wrapper">
-                    <div class="carousel-track" id="carouselTrack">
-                        <div class="carousel-slide">
-                            <img src="photo1.png" alt="Aarnav Garg - Photo 1">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="photo2.png" alt="Aarnav Garg - Photo 2">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="photo3.png" alt="Aarnav Garg - Photo 3">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="photo4.png" alt="Aarnav Garg - Photo 4">
-                        </div>
-                        <div class="carousel-slide">
-                            <img src="photo5.png" alt="Aarnav Garg - Photo 5">
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-button prev" onclick="moveSlide(-1)">‹</button>
-                <button class="carousel-button next" onclick="moveSlide(1)">›</button>
-                <div class="carousel-indicators" id="indicators"></div>
-            </div>
-        </div>
-
-        <div class="about-content">
-            <p>
-                I'm a sophomore at Vernon Hills High School with strong interests in computer science,
-                computational biology, and artificial intelligence. What started as curiosity about data science grown into sustained involvement in research and hands-on exploration
-                of machine learning.
-            </p>
-
-            <p>
-                I enjoy working at the intersection of theory and application, especially where data,
-                algorithms, and real-world impact meet. Research has been a key part of my growth,
-                allowing me to think critically, ask better questions, and build technically sound solutions.
-            </p>
-
-            <p>
-                Outside of research, I compete in mathematics and science competitions and have earned
-                state-level recognition through Science Olympiad and Math Team. I also pursue advanced
-                coursework beyond my school curriculum through self-driven learning. 
-            </p>
-
-            <p>
-                My long-term goal is to develop AI-driven tools that make a meaningful impact in areas
-                like healthcare and society more broadly. I'm always open to
-                collaborating, learning, and connecting with others who share similar interests.
-            </p>
-        </div>
-    </section>
-
-    <!-- Education Section -->
-    <section id="education">
-        <h2 class="section-title">Education</h2>
-        <p class="section-subtitle">Academic excellence and continuous learning</p>
-        
-        <div class="education-card">
-            <div class="education-header">
-                <h3>Vernon Hills High School</h3>
-                <span class="education-date">2024 - 2028</span>
-            </div>
-            
-            <div class="education-details">
-                <div class="detail-item">
-                    <div class="detail-label">Unweighted GPA</div>
-                    <div>4.0 / 4.0</div>
-                </div>
-                <div class="detail-item">
-                    <div class="detail-label">Weighted GPA</div>
-                    <div>4.51 / 4.0</div>
-                </div>
-                <div class="detail-item">
-                    <div class="detail-label">Current Grade</div>
-                    <div>10th Grade (Sophomore)</div>
-                </div>
-                <div class="detail-item">
-                    <div class="detail-label">PSAT 8/9</div>
-                    <div>1440 / 1440 (Perfect Score)</div>
-                </div>
-                <div class="detail-item">
-                    <div class="detail-label">PreACT 9</div>
-                    <div>32 / 32 (Perfect Score)</div>
-                </div>
-            </div>
-
-            <div style="margin-top: 2rem;">
-                <div class="detail-label" style="margin-bottom: 1rem; font-size: 1.2rem;">Advanced Coursework</div>
-                <div class="skill-list">
-                    <span class="skill-badge">AP Computer Science A</span>
-                    <span class="skill-badge">AP Calculus BC</span>
-                    <span class="skill-badge">AP Physics 1</span>
-                    <span class="skill-badge">AP Physics 2</span>
-                    <span class="skill-badge">Honor Roll</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="education-card">
-            <div class="education-header">
-                <h3>Self-Directed Learning</h3>
-                <span class="education-date">Ongoing</span>
-            </div>
-            
-            <div style="margin-top: 1rem;">
-                <p style="color: var(--gray); margin-bottom: 1.5rem;">Continuously expanding knowledge through online coursework and specialized programs in machine learning and data science.</p>
-                <div class="skill-list">
-                    <a href="https://coursera.org/share/8421b8f9d4fe33fe887ba9dfc8763337" target="_blank" class="skill-badge" style="text-decoration: none;">Python for Data Visualization: Matplotlib & Seaborn</a>
-                    <a href="https://coursera.org/share/9311bf1016ced1d56a5899a6d99241bb" target="_blank" class="skill-badge" style="text-decoration: none;">What is Data Science?</a>
-                    <a href="https://coursera.org/share/ca8cb6e50850611b610e6f9724789fd7" target="_blank" class="skill-badge" style="text-decoration: none;">Introduction to Artificial Intelligence (AI)</a>
-                    <a href="https://coursera.org/share/560f9f2038944ff4c8519efd022a28b1" target="_blank" class="skill-badge" style="text-decoration: none;">Generative AI: Prompt Engineering Basics</a>
-                    <a href="https://coursera.org/share/303d2ae82cfd7337b63e2e9704501439" target="_blank" class="skill-badge" style="text-decoration: none;">Generative AI: Introduction and Applications</a>
-                    <a href="https://coursera.org/share/97d61646fa13a7684d1604da66645b48" target="_blank" class="skill-badge" style="text-decoration: none;">Introduction to Deep Learning & Neural Networks with Keras</a>
-                    <a href="https://coursera.org/share/89cf7c0b23d055ac92e95bac10e97a01" target="_blank" class="skill-badge" style="text-decoration: none;">Machine Learning with Python</a>
-                    <a href="https://coursera.org/share/232a2cc135a5402cd90e5a548c5fba5a" target="_blank" class="skill-badge" style="text-decoration: none;">Introduction to Retrieval Augmented Generation (RAG)</a>
-                    <a href="https://coursera.org/share/d6c385c813a2492022f27f6a747f100e" target="_blank" class="skill-badge" style="text-decoration: none;">Data Analysis with Python</a>
-                    <span class="skill-badge">IMSA RISE Online Program</span>
-                </div>
-            </div>
-        </div
+</html>
